@@ -34,10 +34,10 @@ public class UserService {
                     userInfo.getFirstName(),
                     userInfo.getLastName(),
                     userInfo.getPhoneNumber(),
-                    userInfo.getEmail(),
-                    userInfo.getProfilePic()
+                     userInfo.getEmail(),
+                   userInfo.getProfilePic()
             );
-        }
+    }
 
     public UserInfoDTO getUser(UserInfoDTO userInfoDto) throws Exception{
         Optional<UserInfo> userInfoDtoOpt = userRepository.findByUserId(userInfoDto.getUserId());
@@ -54,5 +54,5 @@ public class UserService {
                 userInfo.getProfilePic()
         );
     }
-    }
+}
 
